@@ -15,7 +15,7 @@ function App() {
   return (
     <>
     <div className='h-screen w-screen flex items-center justify-center bg-gray-950'>
-      <div className='h-2/5 w-2/5 bg-gray-500 rounded-xl flex flex-col items-center justify-around'>
+      <div className='h-3/5 w-2/5 bg-gray-500 rounded-xl flex flex-col items-center justify-center'>
         <InputBox label='From' disabled={false} amount={userInput} setAmount={(e)=>setUserInput(e)} options={currencyInfo} selectedCurrency={fromCurrency} setSelectedCurrency={setFromCurrency}/>
         <button className='bg-green-800 p-1 rounded' onClick={
           ()=>{
