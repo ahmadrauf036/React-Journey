@@ -8,7 +8,7 @@ const InputBox = ({
         setAmount,
         options={},
         selectedCurrency = "USD",
-        setSelectedCurrency = "USD"
+        setSelectedCurrency
     }) => {
     const inputRef = useRef(null);
     const labelRef = useRef(null);

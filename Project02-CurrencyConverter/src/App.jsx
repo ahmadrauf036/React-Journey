@@ -19,10 +19,12 @@ function App() {
         <InputBox label='From' disabled={false} amount={userInput} setAmount={(e)=>setUserInput(e)} options={currencyInfo} selectedCurrency={fromCurrency} setSelectedCurrency={setFromCurrency}/>
         <button className='bg-green-800 p-1 rounded' onClick={
           ()=>{
+            let temp=userInput
             setUserInput(convertedAmount)
-            setConvertedAmount(userInput)
+            setConvertedAmount(temp)
+            temp=fromCurrency
             setFromCurrency(toCurrency)
-            setToCurrency(fromCurrency)
+            setToCurrency(temp)
           }
           }>Swap</button>
         <InputBox label='To' disabled={true} amount={convertedAmount} setAmount={(e)=>calc()} options={currencyInfo} selectedCurrency={toCurrency} setSelectedCurrency={setToCurrency}/>
