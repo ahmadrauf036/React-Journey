@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Content from '../components/Content'
 const About = () => {
   return (
-    <div>About</div>
+    < Content Cdirection="row-reverse" Ddirection='start' h1="About me"/>
   )
 }
 

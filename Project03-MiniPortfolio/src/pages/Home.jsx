@@ -1,9 +1,13 @@
 import React from 'react'
+import Content from '../components/Content'
 
-const Home = () => {
+const Home = ({
+  direction="row",
+}) => {
   return (
-    <div>Home</div>
+    < Content/>
   )
 }
+
 
 export default Home

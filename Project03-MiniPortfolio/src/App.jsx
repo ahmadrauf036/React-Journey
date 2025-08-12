@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Github from './pages/Github'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/github' element={<Github/>}/>
       </Routes>
+      <Footer/>
     </>
   )
 }
